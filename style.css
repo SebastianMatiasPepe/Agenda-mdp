@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+:root{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+body{
+    text-align: center;
+    background-color: bisque;
+}
+
+header{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(245, 204, 155);
+}
+
+header>h5{
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.reloj{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+
+}
+
+.container>form{
+    width: 85%;
+    border: 2px solid rgba(206, 180, 125, 0.692);
+    border-radius: 25px;
+    padding: 25px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgb(231, 207, 177);
+
+}
+
+.container>form>h3{
+    font-size: 1.2rem;
+}
+
+.container>form>input{
+    padding: 5px ;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(236, 226, 213);
+    
+    
+}
+
+.container>form>button{
+    width: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    align-self: center;
+    margin-top: 20px;
+    background-color: rgb(236, 226, 213);
+   
+
+}
+
+.contactos{
+    width: 85%;
+    background-color: rgb(231, 207, 177);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin:1rem;
+    padding: 15px;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid rgba(206, 180, 125, 0.692);
+   
+}
+
+.contactosSpan{
+    width: 85%;
+    border: 2px solid rgba(206, 180, 125, 0.692);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 226, 213);
+   
+
+    
+    
+}
+
+.contactosSpan>ul>li{
+    list-style-type: none;
+    
+    
+}
+
+.liName{
+    font-weight: bold;
+}
+
+
+
+hr{
+    margin-top: 20px;
+    border: 2px solid rgba(206, 180, 125, 0.692);
+    font-weight: bold;
+    font-size: 35rem;
+}
+
+footer{
+    background-color: rgb(245, 204, 155);
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@media(min-width:650px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        padding: 25px;
+        font-size: 2rem;
+    }
+
+    .reloj {
+       
+        width: 100%;
+        height: 150px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .reloj h1 {
+        font-size: 3.5rem;
+        font-weight:bold;
+    }
+    
+    .reloj p {
+        font-size: 1.5rem;
+        
+    }
+    
+
+    .container{
+        margin: 0;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        
+    }
+
+    .container>form{
+        margin-left:2% ;
+        margin-top: 2%;
+        border-radius: 8px;
+        height: 92%;
+        
+    }
+
+    .container>form>input{
+        padding: 10px;
+        
+    }
+
+    .container>form>button{
+        cursor: pointer;
+    }
+   
+    .contactos{
+        
+      
+         overflow-y:scroll;
+         justify-content: center;
+         border-radius: 8px;
+        
+    }
+
+    .contactos::-webkit-scrollbar{
+       
+        width: 10px; 
+        background-color: rgb(212, 186, 153);
+        border-radius: 50px;
+        
+    }
+
+  
+
+   
+}
