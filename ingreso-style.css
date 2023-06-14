@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+  
+}
+
+:root{
+    background-image:url(../Agenda/img/demonv2.jpg);
+    background-size:130%;
+    background-position-y: 60% ;
+    background-position-x: 35% ;
+    background-repeat: no-repeat;
+    background-color: rgb(8, 6, 6);
+   
+   
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-size: cover;
+    top: 0;
+    
+    
+}
+
+header{
+    width: 70%;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    opacity:0.8;
+    margin: auto;
+    margin-top: 15px;
+    border : 1px solid red ;
+}
+
+header>h1 {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+main{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    margin-top: 60px;
+    background-color: rgba(207, 201, 201 ,0.6);
+    width: 70%;
+    padding: 40px 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    border: 1px solid rgba(148, 0, 0, 0.925);
+    border-radius: 5px;
+}
+
+input  {
+   
+    width: 70%;
+    height: 2rem;
+    padding: .5rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(148, 0, 0, 0.925);
+}
+
+button{
+    width: 50%;
+    cursor: pointer;
+    background-color:rgba(148, 0, 0, 0.925);
+    border: 1px solid red;
+    padding: .5rem 1.5rem;
+    border-radius: 15px;
+    transition: all .3 ease-in-out;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    align-self: center;
+
+}
+
+button:hover{
+    
+    color: whitesmoke;
+    background-color:rgba(19, 0, 0 , 0.9);
+}
+
+hr{
+    border-color: rgb(19, 0, 0);
+    width: 80%;
+    margin-left: 25px;
+    margin-top: 20px;
+    
+}
+
+p{
+    font-size: 1rem;
+    color: rgb(19, 0, 0);
+    margin-top: 10px;
+}
+
+#p1{
+    cursor: pointer;
+}
+
+p>span{
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p>span:hover{
+    color: rgb(0, 75, 187);
+    transition: 1s;
+}
+
+
+
+
+footer{
+    width: 100%;
+    height: 5rem;
+    margin-top: 200px;
+    padding: 20px;
+    
+background-color:rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+footer>p{
+    color: whitesmoke;
+}
+
+/*@media(min-width:600px){
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    :root{
+        background-size: 200%;
+        background-position-x:100% ;
+        
+    }
+}*/
+
+@media(min-width:600px){
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    :root{
+       background-image: url(../Agenda/img/demonv.jpg);
+       background-size: 100%; 
+       background-position-y:25% ;
+       
+    }
+
+    form{
+        width: 40%;
+        
+    }
+    form>button{
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 10px;
+    }
+}
+
+
+@media(min-width:1274px){
+
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    :root{
+       background-image: url(../Agenda/img/1008472.png);
+       background-size: 100%; 
+       
+    }
+
+    header{
+        opacity: 0.5;
+    }
+
+    form{
+        width: 30%;
+        height: 400px;
+        font-size: 1.7rem;
+
+    }
+
+    form>button{
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 10px;
+    }
+}
